@@ -1,0 +1,32 @@
+{
+  "name": "vent",
+  "version": "1.0.0",
+  "description": "An outlet",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/istobarton/vent.git"
+  },
+  "keywords": [
+    "vent",
+    "outlet",
+    "authentication"
+  ],
+  "author": "isto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/istobarton/vent/issues"
+  },
+  "homepage": "https://github.com/istobarton/vent#readme",
+  "dependencies": {
+    "bcrypt": "^0.8.3",
+    "body-parser": "^1.13.2",
+    "express": "^4.13.1",
+    "mongod": "^1.3.0",
+    "mongodb": "^2.0.36",
+    "nodemon": "^1.3.7"
+  }
+}
