@@ -1,7 +1,7 @@
 body {
   margin: 0;
   margin-top: 10px;
-  font-family: arial, sans-serif;
+  font-family: 'Lobster', cursive;
   text-align: center;
   background-color: #771100;
   color: #bb8855;
@@ -21,8 +21,9 @@ h1 {
 
 #navBar {
   width: 100%;
-  height: 40px;
+  height: 20px;
   background-color: #992200;
+  font-size: 12px;
 }
 
 textarea #styled {
