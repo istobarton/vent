@@ -1,6 +1,9 @@
 <div id='vent'>
   <h1>vent</h1>
+  <p>Feel your rage wash away...</p> 
+  <p> {{count}} </p>
   <form name="signInForm" ng-submit="getData()">
-  <textarea name="Text1" cols="100" rows="50" ng-model="type.rant" placeholder="What's wrong?" ></textarea>
+  <textarea name="Text1" cols="100" rows="50" ng-model="type.rant" ng-bind="num()" placeholder="What's wrong?" ></textarea>
+
   <button>vent</button>
 </div>
