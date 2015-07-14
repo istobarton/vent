@@ -17,6 +17,9 @@ app.use(function (req, res, next) {
   next();
 });
 
+app.use(express.static(__dirname + '/client'));
+
+
 //TODO: Build up Router
 app.get('/', function (req, res) {
   console.log(req.params);

@@ -5,8 +5,8 @@
   <body >
     <h1>Welcome, <a ng-init="friend" ng-bind="user">{{"yourName"}}</a>!</h1>
     <nav id="navBar">
-      <a>Login</a>
-      <a>LogOut</a>
+      <a ng-href="#/signin">Login</a>
+      <a ng-href="#/signup">LogOut</a>
     </nav>
     <div ng-view></div>
 
@@ -19,6 +19,7 @@
     <pre>$routeParams = {{$routeParams}}</pre>
     <script src="node_modules/angular/angular.min.js"></script>
     <script src="node_modules/angular-route/angular-route.js"></script>
+    <script src="type.js"></script>
     <script src="vent.js"></script>
   </body>
 </html>

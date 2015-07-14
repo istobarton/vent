@@ -1,4 +1,4 @@
-angular.module('vent', ["ngRoute"])
+angular.module('vent', ['vent.type', 'ngRoute'])
 
   .controller("MainController", function($scope){
 
@@ -8,7 +8,7 @@ angular.module('vent', ["ngRoute"])
     $routeProvider
       .when('/', {
         templateUrl: 'index.html'
-        // controller: 'MainController'
+        controller: 'typeController'
       })
       .otherwise({ redirectTo: "/signin"})
   }]);
