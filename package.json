@@ -2,7 +2,7 @@
   "name": "vent",
   "version": "1.0.0",
   "description": "An outlet",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/istobarton/vent#readme",
   "dependencies": {
+    "angular": "^1.4.2",
+    "angular-route": "^1.4.2",
     "bcrypt": "^0.8.3",
     "body-parser": "^1.13.2",
     "express": "^4.13.1",

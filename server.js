@@ -28,9 +28,16 @@ var server = app.listen(3000, function () {
   var port = server.address().port;
 
   console.log('Example app listening at http://%s:%s', host, port);
-});
+}); 
 
 
+var bodyParser = require('body-parser')
+
+module.exports = function (app, express){
+  var userRouter = express.Router();
+
+  app.use(bodyParser.json());
+};
 //#### DATABASE INIT #####
 //Initializes connection to 'mongodb://127.0.0.1:27017/test'
 mongoose.connect('mongodb://localhost/test');
@@ -38,10 +45,12 @@ mongoose.connect('mongodb://localhost/test');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error;'));
 db.once('open', function(){
-  console.log("Connected correctly to server.");
+  console.log("Connected correctly to server. " + new Date());
 })
 
 
+
+module.exports = app;
   // MongoClient.connect('mongodb://127.0.0.1:27017/test', function(err, db) {
   //   if(err) throw err;
 
