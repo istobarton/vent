@@ -3,6 +3,7 @@
 //Initializes Express to host locally
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser');
 
 //Initializes MongoDB 
 var MongoClient = require('mongodb').MongoClient;
@@ -17,14 +18,9 @@ app.use(function (req, res, next) {
   next();
 });
 
+app.use(bodyParser.json());
 app.use(express.static(__dirname + '/client'));
 
-
-//TODO: Build up Router
-app.get('/', function (req, res) {
-  console.log(req.params);
-  res.send('Hello asdfsdafWorld!');
-});
 
 var server = app.listen(3000, function () {
   var host = server.address().address;
@@ -41,6 +37,8 @@ module.exports = function (app, express){
 
   app.use(bodyParser.json());
 };
+
+
 //#### DATABASE INIT #####
 //Initializes connection to 'mongodb://127.0.0.1:27017/test'
 mongoose.connect('mongodb://localhost/test');
@@ -50,8 +48,6 @@ db.on('error', console.error.bind(console, 'connection error;'));
 db.once('open', function(){
   console.log("Connected correctly to server. " + new Date());
 })
-
-
 
 module.exports = app;
   // MongoClient.connect('mongodb://127.0.0.1:27017/test', function(err, db) {

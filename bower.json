@@ -6,8 +6,7 @@
     "Isto <istobarton@gmail.com>"
   ],
   "description": "An outlet.",
-  "main": "index.js
-  ",
+  "main": "index.js",
   "license": "MIT",
   "ignore": [
     "**/.*",

@@ -2,12 +2,18 @@
 <html ng-app='vent'>
   <head>
   </head>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="vent.js"></script>
+    <script src="type.js"></script>
   <body >
     <h1>Welcome, <a ng-init="friend" ng-bind="user">{{"yourName"}}</a>!</h1>
     <nav id="navBar">
-      <a ng-href="#/signin">Login</a>
-      <a ng-href="#/signup">LogOut</a>
+      <a ng-href="#/signin">Sign In</a>
+      <a ng-href="#/signup">Sign Up</a>
+      <a ng-href="#/logout">Log Out</a>
     </nav>
+
     <div ng-view></div>
 
     <input ng-model="test">
@@ -17,9 +23,5 @@
     <pre>$route.current.params = {{$route.current.params}}</pre>
     <pre>$route.current.scope.name = {{$route.current.scope.name}}</pre>
     <pre>$routeParams = {{$routeParams}}</pre>
-    <script src="node_modules/angular/angular.min.js"></script>
-    <script src="node_modules/angular-route/angular-route.js"></script>
-    <script src="type.js"></script>
-    <script src="vent.js"></script>
   </body>
 </html>
