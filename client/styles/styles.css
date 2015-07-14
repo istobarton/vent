@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  margin-top: 10px;
+  font-family: arial, sans-serif;
+  text-align: center;
+  background-color: #771100;
+  color: #bb8855;
+}
+
+a {
+  color: #ee9911;
+  font-size: 14px;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+h1 {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+#navBar {
+  width: 100%;
+  height: 40px;
+  background-color: #992200;
+}
+
+textarea #styled {
+  width: 600px;
+  height: 120px;
+  border: 3px solid #cccccc;
+  padding: 5px;
+  font-family: Tahoma, sans-serif;
+  background-image: url(bg.gif);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}

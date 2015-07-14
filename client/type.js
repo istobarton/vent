@@ -10,14 +10,12 @@ angular.module('vent.type', [])
   };
 
   $scope.num = function(type){
-    var hold = $scope.type.rant.split(" ").length-1 || 0;
-    var sum = 750 - hold;
-    $scope.count = " " + sum + " words till calm"
+    if($scope.type.rant!==undefined){
+      var hold = $scope.type.rant.split(" ").length || 0;
+      var sum = 750 - hold;
+      $scope.count = " " + sum + " words till calm"
+    }
   };
-  }
-  )
-
-.controller('AuthController', function ($scope, $window, $location) {
-  $scope.user = {};
 });
+
 

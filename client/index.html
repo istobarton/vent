@@ -6,8 +6,11 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="vent.js"></script>
     <script src="type.js"></script>
+    <script src="auth.js"></script>
+    <script src="factories.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
   <body >
-    <h1>Welcome, <a ng-init="friend" ng-bind="user">{{"yourName"}}</a>!</h1>
+    <h1>VENT</h1>
     <nav id="navBar">
       <a ng-href="#/signin">Sign In</a>
       <a ng-href="#/signup">Sign Up</a>
@@ -16,12 +19,12 @@
 
     <div ng-view></div>
 
-    <input ng-model="test">
+<!--     <input ng-model="test">
     {{test}}
     <pre>$location.path() = {{$location.path()}}</pre>
     <pre>$route.current.templateUrl = {{$route.current.templateUrl}}</pre>
     <pre>$route.current.params = {{$route.current.params}}</pre>
     <pre>$route.current.scope.name = {{$route.current.scope.name}}</pre>
-    <pre>$routeParams = {{$routeParams}}</pre>
+    <pre>$routeParams = {{$routeParams}}</pre> -->
   </body>
 </html>

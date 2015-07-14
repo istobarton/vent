@@ -1,4 +1,4 @@
-angular.module('vent', ['ngRoute', 'vent.type'])
+angular.module('vent', ['ngRoute', 'vent.type', 'vent.auth', 'vent.factory'])
 
   .controller("MainController", function ($scope){
 
@@ -7,19 +7,19 @@ angular.module('vent', ['ngRoute', 'vent.type'])
   .config(['$routeProvider', function($routeProvider){
     $routeProvider
       .when('/signin', {
-        templateUrl: 'signin.html',
+        templateUrl: 'views/signin.html',
         controller: 'AuthController'
       })
       .when('/signup', {
-        templateUrl: 'signup.html',
+        templateUrl: 'views/signup.html',
         controller: 'AuthController'
       })
       .when('/vent', {
-        templateUrl: 'type.html',
+        templateUrl: 'views/type.html',
         controller: 'TypeController'
       })
       .when('/logout', {
-        templateUrl: 'logout.html',
+        templateUrl: 'views/logout.html',
         controller: 'AuthController'
       })
       .otherwise({ redirectTo: "/vent" })
