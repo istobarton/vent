@@ -4,6 +4,15 @@ angular.module('vent', ["ngRoute"])
 
   })
 
+  .config(['$routeProvider', function($routeProvider){
+    $routeProvider
+      .when('/', {
+        templateUrl: 'index.html'
+        // controller: 'MainController'
+      })
+      .otherwise({ redirectTo: "/signin"})
+  }]);
+
 //   .config(['$routeProvider', '$locationProvider',
 //     function($routeProvider, $locationProvider) {
 //       $locationProvider.html5Mode(true);
@@ -24,3 +33,19 @@ angular.module('vent', ["ngRoute"])
 //     }
 //   ]
 // );
+
+// phonecatApp.config(['$routeProvider',
+//   function($routeProvider) {
+//     $routeProvider.
+//       when('/phones', {
+//         templateUrl: 'partials/phone-list.html',
+//         controller: 'PhoneListCtrl'
+//       }).
+//       when('/phones/:phoneId', {
+//         templateUrl: 'partials/phone-detail.html',
+//         controller: 'PhoneDetailCtrl'
+//       }).
+//       otherwise({
+//         redirectTo: '/phones'
+//       });
+//   }]);
