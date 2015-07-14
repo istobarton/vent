@@ -1,4 +1,4 @@
-angular.module('vent', ['ngRoute', 'vent.controllers'])
+angular.module('vent', ['ngRoute', 'vent.type'])
 
   .controller("MainController", function ($scope){
 
@@ -15,7 +15,7 @@ angular.module('vent', ['ngRoute', 'vent.controllers'])
         controller: 'AuthController'
       })
       .when('/vent', {
-        templateUrl: 'vent.html',
+        templateUrl: 'type.html',
         controller: 'TypeController'
       })
       .when('/logout', {
